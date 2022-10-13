@@ -1,5 +1,5 @@
 body{
-    background-color: #a5a5a5;
+    background-color: #F0F0F0;
 }
 
 .flex-wrapper{
@@ -7,7 +7,7 @@ body{
     min-height: calc(100vh - 60px);
     flex-direction: column;
     justify-content: space-between;
-    /*background-color: #3C3837;*/
+    background-color: #F0F0F0;
 }
 
 .gallery-card {
@@ -68,11 +68,11 @@ body{
 }
 
 #navbarTabs a.active{
-    background-color: #8d8d8d;
+    background-color: #FFFFFF; /*#8d8d8d;*/
 }
 
 .navbar.tabcontrol{
-    background-color: #3C3837;
+    background-color: #FFFFFF;
     padding-bottom: 0;
 }
 
@@ -87,8 +87,10 @@ body{
 .tabrow {
 }
 .tabrow li {
-    border: 1px solid #AAA;
-    border-bottom: none;
+    margin-top: 10px;
+    border: 1px solid #AAAAAA50;
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+    /* border-bottom: none; */
 }
 .tabrow a {
     color: #FFFFFF; /*#8D8D8D;*/ /*#555;*/

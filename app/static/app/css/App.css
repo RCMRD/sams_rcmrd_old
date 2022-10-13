@@ -601,7 +601,7 @@ button.w-100.bread-crumb.active {
 }
 
 footer {
-    background: url("images/footer_bg_aqua.png");
+    background: #FFFFF0;
     background-size: cover;
     color: #ffffff;
     height: 50px;
@@ -609,7 +609,7 @@ footer {
 }
 
 footer a {
-    color: #ffffff;
+    color: #101010;
 }
 
 footer a:hover,

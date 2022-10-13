@@ -30,7 +30,7 @@ img {
     min-height: calc(100vh - 60px);
     flex-direction: column;
     justify-content: space-between;
-    background-color: #3C3837;
+    background-color: #F0F0F0;
 }
 
 .app-button-wrapper{
@@ -120,7 +120,7 @@ img {
 
 .card {
     margin-top: 0;
-    background: #3C3837;
+    background: #f0f0f0;
     padding: 3em;
     line-height: 1.5em;
     box-shadow: unset;
