@@ -221,7 +221,6 @@ Now you should be able to run sstart to run the production application.
 ### Authors
 
 - [Billy Ashmall (NASA)](mailto:billy.ashmall@nasa.gov)
-- [Michael Wayne (RCMRD Intern)](mailto:mwaynenjogu@gmail.com)
 
 ## License and Distribution
 
