@@ -87,48 +87,49 @@
 
 </head>
 <body>
-<header>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a href="{% if page == 'menu-home' %}#home {% else %} / {% endif %}" class="navbar-brand">
-                <img src="{% static 'app/img/logo_climateserv_WithGlobe_white.png' %}" alt="ClimateSERV"/>
-            </a>
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li>
-                        <a aria-current="page" id="menu-home" class="nav-link"
-                           href="{% url 'home' %}">SERVIR Applications Inventory</a>
-                    </li>
-                </ul>
-                <div class="navbar-nav">
-
-                    {% if user.is_authenticated %}
-                        <p class="display-name">Welcome, {{ user.username }} |</p>
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light" style="background: white;">
+            <div class="container-fluid" style="padding-top: 20px; padding-bottom: 20px;">
+                <a href="{% if page == 'menu-home' %}#home {% else %} / {% endif %}" class="navbar-brand">
+                    <img src="{% static 'app/img/Servir_Logo_Full_Color_Africa_Large.png' %}" width="350px" alt="SERVIR EA & SA"/>
+                </a>
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <p>
+                            <a aria-current="page" id="menu-home" class="nav-link"
+                               href="{% url 'home' %}">SERVIR Applications Inventory</a>
+                        </p>
+                        
+                    </div>
+                    <div class="navbar-nav">
+    
+                        {% if user.is_authenticated %}
+                            <p class="display-name welcome">Welcome, {{ user.username }}</p><p class="display-name separator"> |</p>
                         <p><a class="nav-link" href="/accounts/logout/">Log Out</a></p>
-                    {% else %}
-                        <a class="nav-link" href="{% provider_login_url 'google' %}">Login with Google</a>
-                    {% endif %}
-                    {% if request.user.is_staff %}
-                        <p class="display-name">|</p>
-                        <a class="nav-link" id="menu-help" href="{% url 'admin:index' %}">Admin</a>
-                    {% endif %}
+                        {% else %}
+                            <a class="nav-link" href="{% provider_login_url 'google' %}">Login with Google</a>
+                        {% endif %}
+                        {% if request.user.is_staff %}
+                            <p class="display-name separator">|</p><a class="nav-link" id="menu-help" href="{% url 'admin:index' %}">Admin</a>
+                        {% endif %}
+                         </div>
                 </div>
             </div>
-        </div>
-
-    </nav>
-</header>
+            
+        </nav>
+    </header>
+    
 {% block body %}
     <div class="flex-wrapper">
 
@@ -158,7 +159,7 @@
             
             <footer id="footer">
                 <div class="climate-copy">
-                    <a href="https://apps.servirglobal.net">AppSERV</a>
+                    <a href="https://apps.rcmrd.org/servir-esa">SERVIR E&SA</a>
                     {#            <span>© SERVIR Global</span>#}
                 </div>
                 <div class="ml-auto climate-power">
@@ -166,12 +167,12 @@
                     <a href="https://servir.rcmrd.org">
                         <img
                                 src="{% static 'app/img/Servir_Logo_Full_Color_Africa_Large.png' %}"
-                                alt="SERVIR EA SA"
+                                alt="SERVIR Global"
                                 style="margin-left: 8px; max-height: 21px;"
                         />
                     </a>
                 </div>
-
+    
             </footer>
         </div>
     </div>
