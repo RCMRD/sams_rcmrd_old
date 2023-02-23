@@ -21,8 +21,10 @@
             apps.map(function (i, app) {
                     const app_obj = $(app);
                     if (app_obj.attr('app_filter').includes(selected_service_area)
-                        &&
-                        app_obj.attr('region').includes($('input[name=region_radio]:checked').val())
+                        /**** If you ever need to use the region dropdown box,
+                         uncomment the next two lines for proper filtering ****/
+                        // &&
+                        // app_obj.attr('region').includes($('input[name=region_radio]:checked').val())
                     ) {
                         app_obj.show();
                     } else {
