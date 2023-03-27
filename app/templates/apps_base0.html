@@ -3,12 +3,21 @@
 <head>
     {% load static %}
     {% load socialaccount %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1CN92MJ3K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-J1CN92MJ3K');
+    </script>
     <meta charset="UTF-8">
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"
     />
-    <title>{% block title %}RCMRD Application Management System - RAMS{% endblock %}</title>
+    <title>{% block title %}SERVIR Application Management System - SAMS{% endblock %}</title>
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel='icon' href="{% static 'app/img/favicon.ico' %}" type='image/x-icon'/>
@@ -49,7 +58,7 @@
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CMLDYD5G3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27020636-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -59,16 +68,16 @@
 
         gtag('js', new Date());
 
-        gtag('config', 'G-0CMLDYD5G3');
+        gtag('config', 'UA-27020636-4');
     </script>
 
 </head>
 <body>
 <header>
     <nav id="nav" class="navbar navbar-expand-lg navbar-light" style="background: white;">
-        <div class="container-fluid" style="padding-top: 13px; padding-bottom: 13px;">
+        <div class="container-fluid" style="padding-top: 20px; padding-bottom: 20px;">
             <a href="{% if page == 'menu-home' %}#home {% else %} / {% endif %}" class="navbar-brand">
-                <img src="{% static 'app/img/rcmrd1.png' %}"  alt="RCMRD"/>
+                <img src="{% static 'app/img/rcmrd.png' %}" width="350px" alt="RCMRD"/>
             </a>
             <button
                     class="navbar-toggler"
@@ -115,23 +124,16 @@
     <div class="d-flex flex-column">
         <footer id="footer">
             <div class="climate-copy">
-                <a href="https://servir.rcmrd.org">
-                     <img 
-                            src="{% static 'app/img/Servir_Logo_Full_Color_Africa_Large1.png' %}"
-                            alt = "SERVIR E&SA"
-                            style = "margin-right: 8px; max-height: 35px;"
-                     />
-		      
-	         </a>
+                <a href="https://servir.rcmrd.org">SERVIR E&SA</a>
                 {#            <span>© SERVIR Global</span>#}
             </div>
             <div class="ml-auto climate-power">
                 {#            <span>Powered by </span>#}
-                <a href="https://www.rcmrd.org">
+                <a href="https://servir.rcmrd.org">
                     <img
-                            src="{% static 'app/img/rcmrd1.png' %}"
+                            src="{% static 'app/img/Servir_Logo_Full_Color_Africa_Large.png' %}"
                             alt="SERVIR Global"
-                            style="margin-left: 8px; max-height: 35px;"
+                            style="margin-left: 8px; max-height: 21px;"
                     />
                 </a>
             </div>
