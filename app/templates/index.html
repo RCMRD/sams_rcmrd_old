@@ -41,7 +41,7 @@
     </script>
 {% endblock %}
 {% block content %}
-    <div style="background-color: #F0F0F0;">
+    <div>
         <!-- <div>
             <div class="searchFilter">
                 <div class="col-sm-12">
@@ -83,7 +83,7 @@
         </div> -->
         <div id="service_area_filter">
             {#        <h1 style="color:#FFFFFF; font-size: 2em; padding: 20px;">RCMRD Applications</h1>#}
-            <nav class="navbar navbar-expand-lg navbar-light tabcontrol" style="background-color: #F0F0F0">
+            <nav class="navbar navbar-expand-lg navbar-light tabcontrol" style="background-color: #16202A">
                 <div class="container-fluid">
                     <button
                             class="navbar-toggler"
@@ -126,10 +126,11 @@
                         </div>
 
                     </div>
+                    
                 </div>
             </nav>
         </div>
-        <div style="display: flex; flex-direction: row; flex-wrap: wrap; background-color: #a5a5a5;">
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 50px; margin-bottom: 50px;">
             {% for app in apps %}
                 <div
                         id="app_{{ app.id }}"
